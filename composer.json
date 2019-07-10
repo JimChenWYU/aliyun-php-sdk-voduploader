@@ -1,0 +1,19 @@
+{
+    "name": "jimchen/aliyun-php-sdk-voduploader",
+    "description": "短视频上传SDK",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "JimChen",
+            "email": "imjimchen@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jimchen\\Voduploader\\": "src"
+        }
+    }
+}
