@@ -1,12 +1,12 @@
-<h1 align="center"> voduploader </h1>
+<h1 align="center"> aliyun-php-sdk-voduploader </h1>
 
-<p align="center"> vod uploader.</p>
+<p align="center"> 阿里云短视频上传SDK.</p>
 
 
 ## Installing
 
 ```shell
-$ composer require jimchen/voduploader -vvv
+$ composer require jimchen/aliyun-php-sdk-voduploader -vvv
 ```
 
 ## Usage

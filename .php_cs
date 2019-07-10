@@ -1,6 +1,6 @@
 <?php
 $header = <<<EOF
-This file is part of the jimchen/voduploader.
+This file is part of the jimchen/aliyun-php-sdk-voduploader.
 
 (c) JimChen <imjimchen@163.com>
 

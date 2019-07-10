@@ -1,6 +1,7 @@
 {
     "name": "jimchen/aliyun-php-sdk-voduploader",
-    "description": "短视频上传SDK",
+    "description": "阿里云短视频上传SDK",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
@@ -9,7 +10,12 @@
         }
     ],
     "require": {
-        "php": ">=5.3"
+        "php": ">=5.4",
+        "jimchen/aliyun-php-sdk-oss": "^1.0",
+        "jimchen/aliyun-php-sdk-vod": "^1.1",
+        "ext-json": "*",
+        "ext-simplexml": "*",
+        "ext-mbstring": "*"
     },
     "autoload": {
         "psr-4": {
