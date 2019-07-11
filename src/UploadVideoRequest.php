@@ -46,7 +46,7 @@ class UploadVideoRequest
         $this->fileName = $fns[1];
         $extName = AliyunVodUtils::getFileExtension($this->fileName);
         if (empty($extName)) {
-            throw new Exception('filePath has no Extension', 'InvalidParameter');
+            $extName = 'mp4';
         }
         $this->mediaExt = $extName;
 
@@ -82,6 +82,11 @@ class UploadVideoRequest
     public function getFileName()
     {
         return $this->fileName;
+    }
+
+    public function setFileName($fileName)
+    {
+        $this->fileName = $fileName;
     }
 
     public function getCateId()
