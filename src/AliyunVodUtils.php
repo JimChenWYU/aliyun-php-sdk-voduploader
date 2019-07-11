@@ -240,7 +240,7 @@ class AliyunVodDownloader
         }
 
         $dfp = @fopen(OssUtil::encodePath($localPath), 'ab+');
-        if (false === $sfp) {
+        if (false === $dfp) {
             throw new Exception('download file fail while writing '.$localPath,
                 AliyunVodError::VOD_ERR_FILE_DOWNLOAD);
         }
