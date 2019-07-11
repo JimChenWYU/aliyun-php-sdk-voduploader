@@ -43,7 +43,7 @@ class UploadVideoRequest
     {
         $this->filePath = $filePath;
         $fns = AliyunVodUtils::getFileName($this->filePath);
-        $this->fileName = $fns[0];
+        $this->fileName = $fns[1];
         $extName = AliyunVodUtils::getFileExtension($this->fileName);
         if (empty($extName)) {
             throw new Exception('filePath has no Extension', 'InvalidParameter');
@@ -67,6 +67,11 @@ class UploadVideoRequest
     public function getMediaExt()
     {
         return $this->mediaExt;
+    }
+
+    public function setMediaExt($mediaExt)
+    {
+        $this->mediaExt = $mediaExt;
     }
 
     public function setTitle($title)
