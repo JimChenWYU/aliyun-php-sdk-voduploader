@@ -57,6 +57,11 @@ class UploadImageRequest
         return $this->fileName;
     }
 
+    public function setFileName($fileName)
+    {
+        $this->fileName = $fileName;
+    }
+
     public function getImageType()
     {
         return $this->imageType;
@@ -72,9 +77,19 @@ class UploadImageRequest
         return $this->imageExt;
     }
 
+    public function setImageExt($imageExt)
+    {
+        $this->imageExt = $imageExt;
+    }
+
     public function getMediaExt()
     {
         return $this->imageExt;
+    }
+
+    public function setMediaExt($mediaExt)
+    {
+        $this->imageExt = $mediaExt;
     }
 
     public function getTitle()
