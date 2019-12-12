@@ -20,6 +20,9 @@
     "autoload": {
         "psr-4": {
             "JimChen\\Voduploader\\": "src"
-        }
+        },
+        "classmap": [
+            "src/AliyunVodUtils.php"
+        ]
     }
 }
